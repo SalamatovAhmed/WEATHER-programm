@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <button class="icon-btn"><i class="fa-solid fa-plus"></i></button>
+            <div class="city-info">
+                <h2 id="location">Malang</h2>
+                <div class="dots"><span></span><span class="active"></span><span></span></div>
+            </div>
+            <button class="icon-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Search city...">
+            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="main-weather">
+            <div class="weather-icon-large">
+                <img src="" alt="weather" id="mainIcon">
+            </div>
+            <p class="date" id="time">Sunday | Nov 14</p>
+            <h1 class="main-temp"><span id="temp">24</span>°</h1>
+            <p class="weather-desc" id="weatherDesc">Heavy rain</p>
+        </div>
+
+        <div class="weather-details">
+            <div class="detail-item">
+                <i class="fa-solid fa-location-arrow"></i>
+                <div class="text">
+                    <span id="wind">3.7 km/h</span>
+                    <p>Wind</p>
+                </div>
+            </div>
+            <div class="detail-item">
+                <i class="fa-solid fa-cloud-rain"></i>
+                <div class="text">
+                    <span id="humidity-chance">74%</span>
+                    <p>Rain</p>
+                </div>
+            </div>
+            <div class="detail-item">
+                <i class="fa-solid fa-temperature-half"></i>
+                <div class="text">
+                    <span id="pressure">1010 mbar</span>
+                    <p>Pressure</p>
+                </div>
+            </div>
+            <div class="detail-item">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="text">
+                    <span id="humidity-val">83%</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast-section">
+            <div class="forecast-header">
+                <p id="forecast-title">Today</p>
+            </div>
+            <div class="forecast-scroll" id="forecast">
+                </div>
+            <div class="forecast-footer">
+                <span>Forecast for 7 Days</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
